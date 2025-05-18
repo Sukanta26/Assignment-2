@@ -1,70 +1,113 @@
+/* Google Quicksand Font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Shared Style */
 .display-flex,
 .navbar,
 .nav-logo,
 .navbar > ul,
-.banner-container {
-    display: flex;
+.banner {
+  display: flex;
+}
+
+.btn-primary {
+  background-color: #111111;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 10px 60px;
+  border-radius: 12px;
+  border: none;
 }
 
 /* Color Section */
 .primary-color {
-    color: #808080;
+  color: #808080;
 }
 .color-1 {
-    color: #FEA301;
+  color: #fea301;
 }
 .color-2 {
-    color: #01ACFD;
+  color: #01acfd;
 }
 .color-3 {
-    color: #05D4DF;
+  color: #05d4df;
 }
 .color-4 {
-    color: #5D58EF;
+  color: #5d58ef;
 }
 
 /* Header Section */
 /* Navbar Style */
 .navbar {
-    max-width: 1440px;
-    height: 62px;
-    margin: auto;
-    justify-content: space-between;
+  max-width: 1440px;
+  height: 62px;
+  margin: auto;
+  justify-content: space-between;
 }
 
+.nav-logo {
+  gap: 11px;
+}
+.navbar > div > h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: auto;
+}
 nav > ul {
-    list-style: none;
-    gap: 32px;
+  list-style: none;
+  gap: 32px;
 }
 nav > ul > li > a {
-     text-decoration: none;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
-.btn-primary {
-    background-color: #FEA301;
-    color: white;
-    padding: 10px 60px;
-    border-radius: 12px;
-    border: none;
+.navbar-btn {
+  background-color: #fea301;
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding: 10px 60px;
+  border-radius: 12px;
+  border: none;
 }
 
 /* Banner Section */
-.banner-container {
-    max-width: 1440px;
-    gap: 50px;
+.banner {
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
+.banner > div > h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0%;
+}
+
+.banner > div > p {
+  padding: 24px 0px;
+  margin: 0%;
+}
 
 /* Responsive media query */
 @media screen and (max-width: 576px) {
-    .btn-primary,
-    .navbar > ul,
-    .navbar > div > h1 {
-        display: none;
-    }
-    .navbar {
-        border: 1px solid #FEA301;
-        padding: 16px 12px;
-    }
+  .navbar-btn,
+  .navbar > ul,
+  .navbar > div > h1 {
+    display: none;
+  }
+  .navbar {
+    border: 1px solid #fea301;
+    padding: 16px 12px;
+  }
 }
