@@ -14,7 +14,6 @@
 .nav-logo,
 .navbar > ul,
 .banner,
-.curriculum-section,
 .card-container {
   display: flex;
 }
@@ -209,5 +208,21 @@ main {
     padding: 10px 24px;
     border-radius: 8px;
     border: none;
+  }
+  /* Standard-Curriculum Section */
+  .card-container {
+    flex-direction: column;
+    padding: 20px 0px;
+  }
+  .curriculum-section {
+    padding: 0px;
+    margin-top: 40px;
+  }
+  .curriculum-section > div > h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .btn-arrow {
+    display: none;
   }
 }
