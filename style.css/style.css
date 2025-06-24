@@ -105,23 +105,25 @@ nav > ul > li > a {
 
 /* Main Section */
 /* Standard-Curriculum Section */
-main {
-  max-width: 1440px;
-  margin: auto;
-  background-image: url("/assets/bg.png");
-}
-
 .curriculum-section {
-  padding: 60px 0px;
+  background-image: url("/assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  padding: 20px;
 }
-
 .curriculum-section > div > h1 {
   font-size: 3rem;
   font-weight: 600;
   margin: 0%;
 }
 .card-container {
+  max-width: 1440px;
+  margin: auto;
   height: 460px;
   padding: 60px 0px;
   gap: 30px;
@@ -131,7 +133,6 @@ main {
   text-align: center;
   border-radius: 19px;
 }
-
 .cards > h2 {
   margin: 0%;
   padding: 32px 0px;
@@ -166,6 +167,46 @@ main {
   background-color: #fea301;
   color: white;
   border: none;
+}
+
+/* Our Stories Section */
+.stories-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(254, 163, 1, 0.3)
+    ),
+    url("/assets/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 0px;
+}
+.stories-container {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 60px 0px;
+}
+.stories-card > img {
+  width: 100%;
+  border-radius: 16px;
+}
+.stories-part-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.stories-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+}
+.stories-button {
 }
 
 /* Responsive media query */
