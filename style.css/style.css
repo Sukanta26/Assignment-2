@@ -85,6 +85,8 @@ nav > ul > li > a {
   border: none;
 }
 
+/* Hamburger Menu */
+
 /* Banner Section */
 .banner {
   align-items: center;
@@ -104,6 +106,12 @@ nav > ul > li > a {
 }
 
 /* Main Section */
+/* Marquee */
+.marquee {
+  margin-top: 20px;
+  font-size: large;
+}
+
 /* Standard-Curriculum Section */
 .curriculum-section {
   background-image: url("/assets/bg.png");
@@ -114,7 +122,7 @@ nav > ul > li > a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 60px;
 }
 .curriculum-section > div > h1 {
   font-size: 3rem;
@@ -125,7 +133,7 @@ nav > ul > li > a {
   max-width: 1440px;
   margin: auto;
   height: 460px;
-  padding: 60px 0px;
+  padding: 80px 0px;
   gap: 30px;
 }
 .cards {
@@ -185,28 +193,58 @@ nav > ul > li > a {
   text-align: center;
   padding: 60px 0px;
 }
+.stories-section > div > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 0%;
+}
 .stories-container {
   max-width: 1440px;
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 60px 0px;
+  gap: 19px;
+  padding: 80px 0px;
 }
 .stories-card > img {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
 .stories-part-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 19px;
 }
 .stories-card {
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 1rem;
 }
-.stories-button {
+.stories-button-1 {
+  color: #ffffff;
+  border-radius: 3rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #3cd8e8;
+  padding: 15px 20px;
+  position: relative;
+  top: -5%;
+  left: -30%;
+}
+.stories-part-2 > div > button {
+  color: #ffffff;
+  border-radius: 3rem;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 15px;
+  position: relative;
+  top: -8%;
+  left: -10%;
+}
+.button-color-1 {
+  background-color: #95b226;
+}
+.button-color-2 {
+  background-color: #5d58f0;
 }
 
 /* Responsive media query */
@@ -221,6 +259,8 @@ nav > ul > li > a {
     border: 1px solid #fea301;
     padding: 16px 12px;
   }
+  /* Hamburger Menu */
+
   /* Banner Section */
   .banner {
     flex-direction: column-reverse;
