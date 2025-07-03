@@ -14,7 +14,8 @@
 .nav-logo,
 .navbar > ul,
 .banner,
-.card-container {
+.card-container,
+.stories-section {
   display: flex;
 }
 
@@ -132,7 +133,6 @@ nav > ul > li > a {
 .card-container {
   max-width: 1440px;
   margin: auto;
-  height: 460px;
   padding: 80px 0px;
   gap: 30px;
 }
@@ -177,7 +177,7 @@ nav > ul > li > a {
   border: none;
 }
 
-/* Our Stories Section */
+/* Our Stories Section  */
 .stories-section {
   background-image: linear-gradient(
       to bottom,
@@ -192,17 +192,23 @@ nav > ul > li > a {
   align-items: center;
   text-align: center;
   padding: 60px 0px;
+  /* z-index: -1; */
 }
 .stories-section > div > h1 {
   font-size: 3rem;
   font-weight: 600;
   margin: 0%;
 }
+.stories-container > div > p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0%;
+  padding: 24px 0px;
+}
 .stories-container {
   max-width: 1440px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   gap: 19px;
   padding: 80px 0px;
 }
@@ -214,6 +220,9 @@ nav > ul > li > a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 19px;
+}
+.hide {
+  display: none;
 }
 .stories-card {
   background-color: #ffffff;
@@ -251,7 +260,9 @@ nav > ul > li > a {
 @media screen and (max-width: 576px) {
   .navbar-btn,
   .navbar > ul,
-  .navbar > div > h1 {
+  .navbar > div > h1,
+  .stories-part-1,
+  .btn-arrow {
     display: none;
   }
   /* Navbar Section */
@@ -295,6 +306,10 @@ nav > ul > li > a {
     flex-direction: column;
     padding: 20px 0px;
   }
+  .card-container > div > h2 {
+    font-size: 1rem;
+    font-weight: 700;
+  }
   .curriculum-section {
     padding: 0px;
     margin-top: 40px;
@@ -303,7 +318,24 @@ nav > ul > li > a {
     font-size: 1.5rem;
     font-weight: 700;
   }
-  .btn-arrow {
-    display: none;
+
+  /* Our Story Section */
+  .stories-part-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11px;
+  }
+  .hide {
+    display: block;
+  }
+  .stories-container {
+    padding: 20px 0px;
+  }
+  .stories-section {
+    padding: 40px 0px;
+  }
+  .stories-section > div > h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
   }
 }
