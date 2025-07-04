@@ -441,6 +441,16 @@ footer {
     font-size: 1.5rem;
     font-weight: 600;
   }
+  .stories-part-2 > div > button {
+    color: #ffffff;
+    border-radius: 3rem;
+    font-size: 0.8rem;
+    border: none;
+    padding: 10px 5px;
+    position: relative;
+    top: -8%;
+    left: -10%;
+  }
 
   /* Footer Section */
   .footer-container {
