@@ -59,6 +59,7 @@
   height: 62px;
   margin: auto;
   justify-content: space-between;
+  padding: 20px 0px;
 }
 
 .nav-logo {
@@ -90,6 +91,56 @@ nav > ul > li > a {
 }
 
 /* Hamburger Menu */
+.hamburger-menu {
+  display: none; /* Only show in mobile view */
+}
+.hamburger-menu {
+  position: relative;
+  z-index: 999;
+  margin-top: 4%;
+}
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  width: 40px;
+  gap: 6px;
+}
+.menu-icon span {
+  background: #fea301;
+  height: 5px;
+  width: 100%;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+/* Hide menu by default */
+.menu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: white;
+  list-style: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.menu li {
+  margin: 10px 0;
+}
+.menu li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+/* Toggle Show Menu */
+#menu-toggle:checked + .menu-icon + .menu {
+  display: block;
+}
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
 
 /* Banner Section */
 .banner {
@@ -239,7 +290,7 @@ nav > ul > li > a {
   background-color: #3cd8e8;
   padding: 15px 20px;
   position: relative;
-  top: -5%;
+  top: -4%;
   left: -30%;
 }
 .stories-part-2 > div > button {
@@ -320,6 +371,9 @@ footer {
     padding: 16px 12px;
   }
   /* Hamburger Menu */
+  .hamburger-menu {
+    display: block; /* Only show in mobile view */
+  }
 
   /* Banner Section */
   .banner {
@@ -391,6 +445,12 @@ footer {
   /* Footer Section */
   .footer-container {
     flex-direction: column;
-    padding: 40px 20px;
+    padding: 60px 20px;
+  }
+  .footer-container > div > p {
+    margin-top: 20px;
+  }
+  .footer-links {
+    padding: 32px 0px;
   }
 }
