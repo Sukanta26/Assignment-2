@@ -15,7 +15,10 @@
 .navbar > ul,
 .banner,
 .card-container,
-.stories-section {
+.stories-section,
+.footer-container,
+.footer-logo,
+.social-links {
   display: flex;
 }
 
@@ -256,6 +259,52 @@ nav > ul > li > a {
   background-color: #5d58f0;
 }
 
+/* Footer Section */
+footer {
+  background-color: #01acfd;
+  color: white;
+}
+.footer-container {
+  max-width: 1440px;
+  margin: auto;
+  justify-content: space-between;
+  padding: 120px 140px;
+}
+.footer-logo > h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 0%;
+}
+.footer-container > div > p {
+  margin-top: 32px;
+  margin-bottom: 0%;
+}
+.footer-container > div > h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0%;
+}
+.footer-links > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 32px;
+}
+
+.footer-links > ul > li > a {
+  text-decoration: none;
+  color: white;
+}
+.social-links {
+  list-style: none;
+  gap: 10px;
+  padding: 0px;
+  margin-top: 32px;
+}
+
 /* Responsive media query */
 @media screen and (max-width: 576px) {
   .navbar-btn,
@@ -337,5 +386,11 @@ nav > ul > li > a {
   .stories-section > div > h1 {
     font-size: 1.5rem;
     font-weight: 600;
+  }
+
+  /* Footer Section */
+  .footer-container {
+    flex-direction: column;
+    padding: 40px 20px;
   }
 }
